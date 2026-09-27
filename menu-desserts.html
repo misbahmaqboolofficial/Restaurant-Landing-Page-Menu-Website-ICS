@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastries & Desserts | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Pastries & Desserts</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="menu.html">Menu</a> &nbsp;/&nbsp; <span>Pastries & Desserts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="section-tag">Freshly Baked In-House Daily</span>
+                <h2 class="title-decorator">Signature Pastries & Gateaux</h2>
+                <p style="max-width: 650px; margin: 0 auto;">Our pastry department, run by Pastry Chef Ayesha, works overnight to prepare traditional French laminated doughs and gorgeous contemporary sweet plates.</p>
+            </div>
+
+            <!-- Dietary Filters -->
+            <div class="diet-filters">
+                <button class="diet-filter-btn active" data-diet="all">All Desserts</button>
+                <button class="diet-filter-btn" data-diet="v">Vegetarian</button>
+                <button class="diet-filter-btn" data-diet="vg">Vegan</button>
+                <button class="diet-filter-btn" data-diet="gf">Gluten-Free</button>
+            </div>
+
+            <!-- Desserts Items Grid -->
+                        <div class="menu-grid">
+                <!-- Column 1: Fine French Pastries -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Fine French Pastries</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=200" alt="Pistachio Éclair" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Pistachio Éclair</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 650</span>
+                                </div>
+                                <div class="menu-item-desc">Choux pastry shell filled with rich roasted pistachio pastry cream and topped with white chocolate glaze. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=200" alt="Lotus Biscoff Cheesecake" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Lotus Biscoff Cheesecake</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 750</span>
+                                </div>
+                                <div class="menu-item-desc">Creamy baked cheesecake with a crunchy lotus biscoff biscuit crust, topped with melted biscoff spread. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=200" alt="Almond Croissant" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Almond Croissant</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 480</span>
+                                </div>
+                                <div class="menu-item-desc">Double-baked, flaky butter croissant filled with sweet almond frangipane paste, topped with toasted almonds. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1516685018646-549198525c1b?q=80&w=200" alt="Classic Vanilla Crème Brûlée" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Classic Vanilla Crème Brûlée</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 780</span>
+                                </div>
+                                <div class="menu-item-desc">Rich egg custard infused with real Madagascar vanilla beans, topped with a torched sugar crust. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Signature Cakes & Plates -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Signature Cakes & Plates</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=200" alt="Belgian Chocolate Fudge Cake" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Belgian Chocolate Fudge Cake</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 850</span>
+                                </div>
+                                <div class="menu-item-desc">Rich layers of moist Belgian chocolate sponge cake filled with dark chocolate fudge frosting. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=200" alt="Classic Lemon Meringue Tart" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Classic Lemon Meringue Tart</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 650</span>
+                                </div>
+                                <div class="menu-item-desc">Crisp pastry shell filled with tangy organic lemon curd, topped with toasted French meringue peaks. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=200" alt="Matcha Tiramisu Cup" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Matcha Tiramisu Cup</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 850</span>
+                                </div>
+                                <div class="menu-item-desc">Layers of matcha-soaked ladyfingers and sweet mascarpone cream, dusted with premium Uji matcha powder. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1541795795328-f073b763494e?q=80&w=200" alt="Dark Chocolate Mousse Cup" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Dark Chocolate Mousse Cup</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 750</span>
+                                </div>
+                                <div class="menu-item-desc">Fluffy and airy whipped dark chocolate mousse, topped with fresh strawberries and chocolate curls. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informational Message -->
+            <div class="text-center" style="margin-top: 70px;">
+                <p style="margin-bottom: 20px;">Pair these sweet creations with our award-winning specialty coffee beans.</p>
+                <a href="menu-drinks.html" class="btn btn-dark">View Specialty Coffee Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

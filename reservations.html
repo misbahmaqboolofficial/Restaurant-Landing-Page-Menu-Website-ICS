@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Book a Table</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Reservations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Booking Section -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <span class="section-tag">Secure Your Experience</span>
+                <h2 class="title-decorator">Table Reservation Request</h2>
+                <p>Please select your preferred seating area and complete the details below. We look forward to hosting you at L'Ambroisie.</p>
+            </div>
+
+            <!-- Booking Form Container -->
+            <div class="booking-container">
+                <form id="bookingForm">
+                    
+                    <!-- Area Selector -->
+                    <div style="margin-bottom: 25px;">
+                        <span class="form-group"><label style="margin-bottom: 12px; display: block;">1. Select Seating Area</label></span>
+                        <div class="area-selector">
+                            <!-- Option 1 -->
+                            <div class="area-option selected">
+                                <div class="area-option-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=400" alt="Main Dining Hall Seating">
+                                </div>
+                                <div class="area-option-info">
+                                    <input type="radio" name="bookingArea" id="areaMain" value="Main Dining Hall" checked>
+                                    <label for="areaMain">Main Dining Hall</label>
+                                    <span>Elegant & Classy</span>
+                                </div>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="area-option">
+                                <div class="area-option-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=400" alt="Sunlit Veranda Seating">
+                                </div>
+                                <div class="area-option-info">
+                                    <input type="radio" name="bookingArea" id="areaVeranda" value="Sunlit Veranda">
+                                    <label for="areaVeranda">Sunlit Veranda</label>
+                                    <span>Bright & Botanical</span>
+                                </div>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="area-option">
+                                <div class="area-option-img-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=400" alt="Espresso Lounge Seating">
+                                </div>
+                                <div class="area-option-info">
+                                    <input type="radio" name="bookingArea" id="areaLounge" value="Espresso Lounge">
+                                    <label for="areaLounge">Espresso Lounge</label>
+                                    <span>Cozy & Relaxed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input Grid -->
+                    <div class="form-grid">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="bookingName">Full Name</label>
+                            <input type="text" id="bookingName" required placeholder="e.g. Mariam Siddiqui" class="form-control">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="bookingEmail">Email Address</label>
+                            <input type="email" id="bookingEmail" required placeholder="e.g. eleanor@example.com" class="form-control">
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="form-group">
+                            <label for="bookingPhone">Phone Number</label>
+                            <input type="tel" id="bookingPhone" required placeholder="e.g. +33 6 1234 5678" class="form-control">
+                        </div>
+
+                        <!-- Guest Count -->
+                        <div class="form-group">
+                            <label for="bookingGuests">Number of Guests</label>
+                            <select id="bookingGuests" class="form-control">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                                <option value="9">9+ (Private Hall Enquiry)</option>
+                            </select>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="form-group">
+                            <label for="bookingDate">Date</label>
+                            <input type="date" id="bookingDate" required class="form-control">
+                        </div>
+
+                        <!-- Time -->
+                        <div class="form-group">
+                            <label for="bookingTime">Time Slot</label>
+                            <select id="bookingTime" class="form-control">
+                                <optgroup label="Breakfast & Brunch">
+                                    <option value="08:30">08:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="01:00">01:00 PM</option>
+                                </optgroup>
+                                <optgroup label="Lunch & Afternoon">
+                                    <option value="02:00">02:00 PM</option>
+                                    <option value="03:00">03:00 PM</option>
+                                </optgroup>
+                                <optgroup label="Dinner Slots">
+                                    <option value="06:00">06:00 PM</option>
+                                    <option value="07:30" selected>07:30 PM</option>
+                                    <option value="09:00">09:00 PM</option>
+                                    <option value="10:00">10:00 PM</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="form-group form-full">
+                            <label for="bookingNotes">Special Requests / Allergies</label>
+                            <textarea id="bookingNotes" rows="3" placeholder="e.g. Celebrating an anniversary, requires vegetarian options, or high chair for toddler..." class="form-control" style="resize: none;"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Policy note -->
+                    <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 25px;">
+                        <i class="fa-solid fa-circle-info" style="color: var(--color-gold);"></i> Reservation policy: Tables are held for a maximum of 15 minutes past the booking slot. For changes or cancellations, please contact us at least 2 hours prior to your scheduled arrival.
+                    </p>
+
+                    <!-- Submit -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;">Confirm Reservation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Receipt Modal Overlay -->
+    <div id="receiptOverlay" class="receipt-overlay">
+        <div class="receipt-card">
+            <div class="receipt-header">
+                <div class="receipt-logo">L'Ambroisie<span>.</span></div>
+                <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); margin-top: 5px;">Reservation Receipt</div>
+            </div>
+            
+            <div class="receipt-body">
+                <!-- Ref -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Booking Reference:</span>
+                    <span class="receipt-value" id="rcptRef" style="color: var(--color-gold-dark);">AMB-481920</span>
+                </div>
+                <!-- Name -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Guest Name:</span>
+                    <span class="receipt-value" id="rcptName">Mariam Siddiqui</span>
+                </div>
+                <!-- Phone -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Phone Number:</span>
+                    <span class="receipt-value" id="rcptPhone">+92 300 1234567</span>
+                </div>
+                <!-- Date -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Date:</span>
+                    <span class="receipt-value" id="rcptDate">2026-09-12</span>
+                </div>
+                <!-- Time -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Time Slot:</span>
+                    <span class="receipt-value" id="rcptTime">07:30 PM</span>
+                </div>
+                <!-- Guest count -->
+                <div class="receipt-row">
+                    <span class="receipt-label">Seating Count:</span>
+                    <span class="receipt-value" id="rcptGuests">2 Guests</span>
+                </div>
+                <!-- Seating Area -->
+                <div class="receipt-row" style="border-bottom: none;">
+                    <span class="receipt-label">Seating Area:</span>
+                    <span class="receipt-value" id="rcptArea">Main Dining Hall</span>
+                </div>
+            </div>
+
+            <div class="receipt-footer-msg">
+                We've sent a detailed confirmation email. Please show this receipt or reference code upon your arrival.
+            </div>
+
+            <button id="closeReceipt" class="btn btn-dark" style="width: 100%;">Done, Thank you</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+    <script>
+        // Set default date input value to tomorrow
+        const dateInput = document.getElementById('bookingDate');
+        if (dateInput) {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            dateInput.value = tomorrow.toISOString().split('T')[0];
+            // Prevent booking in the past
+            dateInput.min = new Date().toISOString().split('T')[0];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Location | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Contact & Location</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Details Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <!-- Column 1: Info and Hours -->
+                <div class="split-content">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="title-decorator-left">Reach Out Or Visit Us</h2>
+                    <p>Have questions about private hall bookings, dietary modifications, or wholesale coffee bean accounts? Drop us a line or visit our historic venue. We're here to help.</p>
+                    
+                    <!-- Contacts -->
+                    <div style="margin-bottom: 35px; display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fa-solid fa-location-dot" style="color: var(--color-gold); font-size: 1.3rem;"></i>
+                            <span style="font-size: 0.9rem; font-weight: 500;">Shop 12-B, Kohsar Market, Sector F-6, Islamabad, Pakistan</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fa-solid fa-phone" style="color: var(--color-gold); font-size: 1.3rem;"></i>
+                            <span style="font-size: 0.9rem; font-weight: 500;">+92 (51) 282-5300</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fa-solid fa-envelope" style="color: var(--color-gold); font-size: 1.3rem;"></i>
+                            <span style="font-size: 0.9rem; font-weight: 500;">info@lambroisie.pk</span>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours Table -->
+                    <div style="background-color: var(--color-bg-cream); padding: 30px; border-left: 3px solid var(--color-gold);">
+                        <h4 style="margin-bottom: 15px; font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.1em; color: var(--color-gold-dark);">Opening Hours</h4>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.85rem;">
+                            <span>Monday - Friday</span>
+                            <span style="font-weight: 600;">7:00 AM - 10:00 PM</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+                            <span>Saturday - Sunday</span>
+                            <span style="font-weight: 600;">8:00 AM - 11:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Contact Form -->
+                <div class="booking-container" style="padding: 40px;">
+                    <form id="contactForm">
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" id="contactName" required placeholder="e.g. Mariam Siddiqui" class="form-control">
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" required placeholder="e.g. eleanor@example.com" class="form-control">
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <select id="contactSubject" class="form-control">
+                                    <option value="General inquiry">General Inquiry</option>
+                                    <option value="Private Event booking">Private Event Booking</option>
+                                    <option value="Press / Marketing">Press & Marketing</option>
+                                    <option value="Feedback / Complaints">Feedback & Suggestions</option>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message</label>
+                                <textarea id="contactMessage" rows="5" required placeholder="Describe your inquiry in detail..." class="form-control" style="resize: none;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stylized Vector Map Section -->
+    <section class="section section-dark text-center" style="background-color: #161616; padding: 60px 0;">
+        <div class="container">
+            <span class="section-tag" style="color: var(--color-gold);">Location Map</span>
+            <h2 style="margin-bottom: 40px;">Find Us in Islamabad</h2>
+            
+            <!-- Map Placeholder Box -->
+            <div style="background-color: #1a1a1a; border: 1px solid rgba(197, 168, 128, 0.3); border-radius: 4px; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; overflow: hidden; box-shadow: var(--shadow-dark);">
+                
+                <!-- Stylized grid network to resemble a classy vector map backdrop -->
+                <div style="position: absolute; width: 150%; height: 150%; background-image: radial-gradient(circle, rgba(197, 168, 128, 0.05) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.7; z-index: 1;"></div>
+                
+                <div style="z-index: 2; position: relative;">
+                    <!-- Map Pin Icon -->
+                    <div style="width: 60px; height: 60px; background-color: var(--color-gold-light); border: 2px solid var(--color-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; animation: pulse 2s infinite ease-in-out;">
+                        <i class="fa-solid fa-location-dot" style="color: var(--color-gold); font-size: 1.8rem;"></i>
+                    </div>
+                    
+                    <h3 style="color: var(--color-text-light); font-size: 1.5rem; margin-bottom: 5px;">L'Ambroisie Islamabad</h3>
+                    <p style="color: var(--color-text-muted-light); font-size: 0.85rem; margin-bottom: 25px;">Coordinates: 33.7294° N, 73.0649° E (Kohsar Market, Sector F-6)</p>
+                    
+                    <a href="https://maps.google.com/?q=Kohsar+Market+Sector+F-6+Islamabad+Pakistan" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="padding: 10px 24px; font-size: 0.75rem;">
+                        <i class="fa-solid fa-arrow-up-right-from-square" style="margin-right: 8px;"></i> Open in Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+    
+    <!-- CSS Animation for Pulse mapping pin -->
+    <style>
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(197, 168, 128, 0.4);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(197, 168, 128, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(197, 168, 128, 0);
+            }
+        }
+    </style>
+</body>
+</html>

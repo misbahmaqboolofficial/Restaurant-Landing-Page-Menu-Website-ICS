@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast & Brunch | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Breakfast & Brunch</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="menu.html">Menu</a> &nbsp;/&nbsp; <span>Breakfast & Brunch</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="section-tag">Served Daily 8:00 AM - 2:00 PM</span>
+                <h2 class="title-decorator">Morning Culinary Delights</h2>
+                <p style="max-width: 650px; margin: 0 auto;">Start your day with our modern breakfast collection, featuring classic techniques combined with elegant, locally sourced organic ingredients.</p>
+            </div>
+
+            <!-- Dietary Filters -->
+            <div class="diet-filters">
+                <button class="diet-filter-btn active" data-diet="all">All Breakfast</button>
+                <button class="diet-filter-btn" data-diet="v">Vegetarian</button>
+                <button class="diet-filter-btn" data-diet="vg">Vegan</button>
+                <button class="diet-filter-btn" data-diet="gf">Gluten-Free</button>
+            </div>
+
+            <!-- Breakfast Items Grid -->
+                        <div class="menu-grid">
+                <!-- Column 1: Morning Signatures -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Morning Signatures</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=200" alt="Classic Eggs Benedict" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Classic Eggs Benedict</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,350</span>
+                                </div>
+                                <div class="menu-item-desc">Poached organic eggs, smoked turkey breast, and creamy hollandaise sauce served over toasted English muffins. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1603046891744-1f76eb10aec1?q=80&w=200" alt="Avocado & Feta Sourdough Toast" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Avocado & Feta Sourdough Toast</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 950</span>
+                                </div>
+                                <div class="menu-item-desc">Crushed Hass avocado, poached egg, and crumbled Greek feta cheese on toasted sourdough bread with chili flakes. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?q=80&w=200" alt="Cheese & Mushroom Omelette" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Cheese & Mushroom Omelette</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 850</span>
+                                </div>
+                                <div class="menu-item-desc">Three organic eggs folded with cheddar cheese, sautéed mushrooms, and fresh coriander. Served with home fries. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=200" alt="Smoked Salmon Sourdough" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Smoked Salmon Sourdough</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,450</span>
+                                </div>
+                                <div class="menu-item-desc">Premium Norwegian smoked salmon slices over lemon-dill cream cheese, pickled onions, and capers on toasted sourdough. (Serves 1)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Sweet & Light Start -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Sweet & Light Start</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=200" alt="Buttermilk Pancake Stack" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Buttermilk Pancake Stack</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 950</span>
+                                </div>
+                                <div class="menu-item-desc">Three fluffy buttermilk pancakes stacked and served with maple syrup, wild berry compote, and whipped butter. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?q=80&w=200" alt="Berry Acai Smoothie Bowl" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Berry Acai Smoothie Bowl</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,100</span>
+                                </div>
+                                <div class="menu-item-desc">Blended organic acai berries topped with house-made honey granola, chia seeds, sliced bananas, and local honey. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=200" alt="Belgian Waffles with Nutella" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Belgian Waffles with Nutella</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,250</span>
+                                </div>
+                                <div class="menu-item-desc">Crisp Belgian waffles topped with warm Nutella drizzle, fresh strawberries, and vanilla bean whipped cream. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=200" alt="Mango Chia Seed Pudding" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Mango Chia Seed Pudding</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 750</span>
+                                </div>
+                                <div class="menu-item-desc">Coconut milk soaked white chia seeds, layered with sweet local mango purée and topped with fresh mint. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action -->
+            <div class="text-center" style="margin-top: 70px;">
+                <p style="margin-bottom: 20px;">Would you like to reserve a cozy corner table for breakfast?</p>
+                <a href="reservations.html" class="btn btn-dark">Reserve A Table Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch & Dinner | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Lunch & Dinner</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="menu.html">Menu</a> &nbsp;/&nbsp; <span>Lunch & Dinner</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="section-tag">Lunch: 12:00 PM - 3:30 PM &nbsp;|&nbsp; Dinner: 6:00 PM - 11:00 PM</span>
+                <h2 class="title-decorator">Epicurean Mains & Plates</h2>
+                <p style="max-width: 650px; margin: 0 auto;">Experience refined French bistro dining. Each dish is a crafted presentation of colors, flavors, and textures developed by Executive Chef Chef Haroon.</p>
+            </div>
+
+            <!-- Dietary Filters -->
+            <div class="diet-filters">
+                <button class="diet-filter-btn active" data-diet="all">All Dishes</button>
+                <button class="diet-filter-btn" data-diet="v">Vegetarian</button>
+                <button class="diet-filter-btn" data-diet="vg">Vegan</button>
+                <button class="diet-filter-btn" data-diet="gf">Gluten-Free</button>
+            </div>
+
+            <!-- Lunch/Dinner Items Grid -->
+                        <div class="menu-grid">
+                <!-- Column 1: Small Plates & Starters -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Small Plates & Starters</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=200" alt="Crispy Calamari Basket" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Crispy Calamari Basket</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,250</span>
+                                </div>
+                                <div class="menu-item-desc">Golden fried crispy calamari rings served with a zesty home-made tartar sauce and lemon wedges. (Serves 1-2)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1574969884448-fe5bce3d0d51?q=80&w=200" alt="Mushroom & Cheese Flatbread" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Mushroom & Cheese Flatbread</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,150</span>
+                                </div>
+                                <div class="menu-item-desc">Oven-baked flatbread topped with sautéed wild mushrooms, melted mozzarella cheese, and white truffle oil. (Serves 1-2)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?q=80&w=200" alt="Cream of Wild Mushroom Soup" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Cream of Wild Mushroom Soup</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 650</span>
+                                </div>
+                                <div class="menu-item-desc">Velvety puréed wild forest mushrooms and fresh cream, served hot with golden garlic croutons. (Serves 1)</div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=200" alt="Mediterranean Caesar Salad" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Mediterranean Caesar Salad</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 850</span>
+                                </div>
+                                <div class="menu-item-desc">Crisp romaine lettuce tossed in Caesar dressing, topped with parmesan shavings, garlic croutons, and grilled chicken. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Entrées & Mains -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Entrées & Mains</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=200" alt="Tarragon Grilled Chicken" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Tarragon Grilled Chicken</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,550</span>
+                                </div>
+                                <div class="menu-item-desc">Flame-grilled chicken breast fillets served in a rich, creamy tarragon herb sauce with mashed potatoes and seasonal vegetables. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=200" alt="Prime Beef Tenderloin Steak" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Prime Beef Tenderloin Steak</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 2,000</span>
+                                </div>
+                                <div class="menu-item-desc">250g grilled beef tenderloin steak served with a choice of wild mushroom or black pepper sauce, sautéed vegetables, and fries. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=200" alt="Grilled Red Snapper Fillet" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Grilled Red Snapper Fillet</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,850</span>
+                                </div>
+                                <div class="menu-item-desc">Grilled fresh red snapper fillet served with a lemon butter caper sauce, potato wedges, and roasted broccoli. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?q=80&w=200" alt="Fettuccine Alfredo Pasta" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Fettuccine Alfredo Pasta</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 1,450</span>
+                                </div>
+                                <div class="menu-item-desc">Fettuccine pasta tossed in rich, creamy parmesan Alfredo sauce, topped with sliced grilled chicken breast. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Section link -->
+            <div class="text-center" style="margin-top: 70px;">
+                <p style="margin-bottom: 20px;">Planning an elegant dinner date? Book a table in advance.</p>
+                <a href="reservations.html" class="btn btn-dark">Book Table for Dinner</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

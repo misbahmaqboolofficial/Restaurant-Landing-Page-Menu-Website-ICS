@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Photo Gallery</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="section-tag">Visual Inspiration</span>
+                <h2 class="title-decorator">A Glimpse Into Our Sanctuary</h2>
+                <p style="max-width: 650px; margin: 0 auto;">Filter through our visual collection to preview our industrial-chic dining halls, artisanal brewing methods, and modern plated gastronomy.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="interior">The Space</button>
+                <button class="filter-btn" data-filter="plates">Fine Plates</button>
+                <button class="filter-btn" data-filter="pastries">Pastry Bar</button>
+                <button class="filter-btn" data-filter="drinks">Coffee & Spirits</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Item 1: Interior -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800" alt="Main Dining Hall Interior">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Main Dining Hall</h3>
+                        <span>Interior</span>
+                    </div>
+                </div>
+
+                <!-- Item 2: Plates -->
+                <div class="gallery-item" data-category="plates">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800" alt="Classic Eggs Benedict Brunch">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Classic Eggs Benedict</h3>
+                        <span>Fine Plates</span>
+                    </div>
+                </div>
+
+                <!-- Item 3: Drinks -->
+                <div class="gallery-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=800" alt="Specialty Latte Art Pouring">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Artisanal Latte Art</h3>
+                        <span>Coffee & Spirits</span>
+                    </div>
+                </div>
+
+                <!-- Item 4: Pastries -->
+                <div class="gallery-item" data-category="pastries">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800" alt="Freshly Baked Croissants">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Fresh Morning Croissants</h3>
+                        <span>Pastry Bar</span>
+                    </div>
+                </div>
+
+                <!-- Item 5: Interior -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800" alt="Bistro Outdoor Patio Seating">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Sunlight Patio Seating</h3>
+                        <span>Interior</span>
+                    </div>
+                </div>
+
+                <!-- Item 6: Plates -->
+                <div class="gallery-item" data-category="plates">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800" alt="Prime Beef Tenderloin Steak">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Prime Beef Tenderloin Steak</h3>
+                        <span>Fine Plates</span>
+                    </div>
+                </div>
+
+                <!-- Item 7: Drinks -->
+                <div class="gallery-item" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800" alt="Pour Over Chemex Extraction">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>V60 Filter Chemex</h3>
+                        <span>Coffee & Spirits</span>
+                    </div>
+                </div>
+
+                <!-- Item 8: Pastries -->
+                <div class="gallery-item" data-category="pastries">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=800" alt="Pistachio Éclair Pastry">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Pistachio Éclair</h3>
+                        <span>Pastry Bar</span>
+                    </div>
+                </div>
+
+                <!-- Item 9: Interior -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800" alt="La Marzocco Espresso Machine Setup">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-expand"></i>
+                        <h3>Espresso Craft Bench</h3>
+                        <span>Interior</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="galleryLightbox" class="lightbox">
+        <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+        <span class="lightbox-nav lightbox-prev"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="lightbox-nav lightbox-next"><i class="fa-solid fa-chevron-right"></i></span>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

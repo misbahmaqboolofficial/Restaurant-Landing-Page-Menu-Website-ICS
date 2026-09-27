@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisanal Drinks | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Artisanal Drinks</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <a href="menu.html">Menu</a> &nbsp;/&nbsp; <span>Artisanal Drinks</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <span class="section-tag">Craft Coffee & Handcrafted Cocktails</span>
+                <h2 class="title-decorator">Specialty Roasts & Spirits</h2>
+                <p style="max-width: 650px; margin: 0 auto;">From our micro-lot roasted espresso extraction bar to curated botanical spirits, explore beverages mixed with meticulous care and high-quality extracts.</p>
+            </div>
+
+            <!-- Dietary Filters -->
+            <div class="diet-filters">
+                <button class="diet-filter-btn active" data-diet="all">All Drinks</button>
+                <button class="diet-filter-btn" data-diet="v">Vegetarian</button>
+                <button class="diet-filter-btn" data-diet="vg">Vegan</button>
+                <button class="diet-filter-btn" data-diet="gf">Gluten-Free</button>
+            </div>
+
+            <!-- Drinks Items Grid -->
+                        <div class="menu-grid">
+                <!-- Column 1: Specialty Coffee Bar -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Specialty Coffee Bar</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=200" alt="Single-Origin Pour Over" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Single-Origin Pour Over</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 550</span>
+                                </div>
+                                <div class="menu-item-desc">Slow hand-brewed V60 filter coffee with notes of cocoa and brown sugar. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=200" alt="Traditional Cortado" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Traditional Cortado</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 450</span>
+                                </div>
+                                <div class="menu-item-desc">Equal parts double-shot house espresso and velvety, warm organic micro-foamed milk. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" data-tooltip="Vegetarian">V</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=200" alt="Ceremonial Matcha Latte" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Ceremonial Matcha Latte</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 580</span>
+                                </div>
+                                <div class="menu-item-desc">Premium stone-ground Uji matcha whisked with steamed organic oat milk and blue agave syrup. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=200" alt="Citrus Espresso Tonic" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Citrus Espresso Tonic</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 480</span>
+                                </div>
+                                <div class="menu-item-desc">Double shot espresso poured cold over chilled fever-tree tonic water with a fresh orange twist. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Signature Mocktails & Botanicals -->
+                <div>
+                    <h3 style="font-family: var(--font-serif); border-bottom: 1px solid var(--color-gold); padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; font-size: 1.4rem; letter-spacing: 0.05em; color: var(--color-gold-dark);">Signature Mocktails & Botanicals</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Item 1 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=200" alt="Lavender Bee's Knees" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Lavender Bee's Knees</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 720</span>
+                                </div>
+                                <div class="menu-item-desc">Artisanal zero-proof dry gin, house-made organic lavender honey syrup, and fresh lemon juice, shaken and chilled. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                    <span class="tag tag-chef" data-tooltip="House Specialty">Chef Specialty</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=200" alt="Smoked Rosemary Old Fashioned" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Smoked Rosemary Old Fashioned</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 780</span>
+                                </div>
+                                <div class="menu-item-desc">Premium zero-proof rye oak distillate, Angostura botanical infusions, brown sugar, orange peel, and torched rosemary. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=200" alt="Hibiscus Rose Cooler" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Hibiscus Rose Cooler (Mocktail)</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 580</span>
+                                </div>
+                                <div class="menu-item-desc">Brewed organic hibiscus herbal tea, organic rosewater extract, and fresh lime juice, topped with sparkling water and mint. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=200" alt="Cucumber Basil Smash" class="menu-item-img">
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title">Cucumber Basil Smash (Mocktail)</span>
+                                    <span class="menu-item-dots"></span>
+                                    <span class="menu-item-price">Rs. 520</span>
+                                </div>
+                                <div class="menu-item-desc">Pressed English cucumber juice, muddled sweet Italian basil leaves, elderflower tonic, and fresh lime. (Serves 1)</div>
+                                <div class="menu-item-tags">
+                                    <span class="tag tag-veg" style="background-color: rgba(46, 125, 50, 0.2); border-color: #2e7d32; color: #1b5e20;" data-tooltip="Vegan">VG</span>
+                                    <span class="tag tag-gf" data-tooltip="Gluten-Free">GF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Informational Message -->
+            <div class="text-center" style="margin-top: 70px;">
+                <p style="margin-bottom: 20px;">We also host exclusive monthly Coffee Tasting and Cocktail Mixing classes.</p>
+                <a href="events.html" class="btn btn-dark">View Upcoming Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>

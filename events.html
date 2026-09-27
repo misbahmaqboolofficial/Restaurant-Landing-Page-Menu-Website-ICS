@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Masterclasses | L'Ambroisie</title>
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">L'Ambroisie<span>.</span></a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inner Page Hero -->
+    <section class="inner-hero" style="background-image: url('https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=1200');">
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content">
+            <h1>Events & Classes</h1>
+            <div class="inner-hero-breadcrumbs">
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Events</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events List Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 50px;">
+                <span class="section-tag">Gatherings & Education</span>
+                <h2 class="title-decorator">Bespoke Culinary Gatherings</h2>
+                <p style="max-width: 650px; margin: 0 auto;">Join us for community workshops, acoustic performances, and tasting menus designed to cultivate flavor, rhythm, and local connections.</p>
+            </div>
+
+            <!-- Event Card 1 -->
+            <div class="event-card">
+                <div class="event-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=600" alt="Coffee Brewing Masterclass">
+                </div>
+                <div class="event-info-wrapper">
+                    <div class="event-date">Sept 15, 2026</div>
+                    <div class="event-time"><i class="fa-regular fa-clock"></i> 10:00 AM - 12:30 PM &nbsp;|&nbsp; Fee: Rs. 3,500</div>
+                    <h3>Barista & Roasting Masterclass</h3>
+                    <p>Unlock the secrets of specialty coffee. In this hands-on workshop led by Zainab Khan, you'll learn proper grinder calibration, espresso extraction ratios, milk micro-steaming texturing, and basic latte art patterns.</p>
+                    <form class="event-rsvp-form" data-event="Barista Masterclass" style="display: flex; gap: 10px; max-width: 400px;">
+                        <input type="email" required placeholder="Enter email to reserve spot" class="form-control" style="font-size: 0.8rem; padding: 10px;">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.75rem;">RSVP</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="event-card">
+                <div class="event-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=600" alt="Jazz Evening Live Music">
+                </div>
+                <div class="event-info-wrapper">
+                    <div class="event-date">Every Thursday</div>
+                    <div class="event-time"><i class="fa-regular fa-clock"></i> 07:30 PM - 10:30 PM &nbsp;|&nbsp; Entrance: Free</div>
+                    <h3>Weekly Live Jazz & Mocktail Evening</h3>
+                    <p>Wind down your Thursdays with our popular jazz sessions. Sip carefully selected artisanal zero-proof mocktails, cold-brew infusions, and sparkling botanical coolers, paired with gourmet cheese platters while local jazz trios perform acoustically.</p>
+                    <form class="event-rsvp-form" data-event="Live Jazz Thursday" style="display: flex; gap: 10px; max-width: 400px;">
+                        <input type="email" required placeholder="Enter email to book table" class="form-control" style="font-size: 0.8rem; padding: 10px;">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.75rem;">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="event-card">
+                <div class="event-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600" alt="Pastry Baking Class">
+                </div>
+                <div class="event-info-wrapper">
+                    <div class="event-date">Oct 03, 2026</div>
+                    <div class="event-time"><i class="fa-regular fa-clock"></i> 03:00 PM - 05:30 PM &nbsp;|&nbsp; Fee: Rs. 4,500</div>
+                    <h3>Artisanal French Pastry Class</h3>
+                    <p>Delve into the art of classical French bakes. Head Pastry Chef Ayesha Malik will teach you step-by-step methods for producing light, crispy choux pastry rings, signature salted caramel tart bases, and airy chocolate soufflés. Refreshing mocktails, snacks, and recipe booklets included.</p>
+                    <form class="event-rsvp-form" data-event="Pastry Baking Class" style="display: flex; gap: 10px; max-width: 400px;">
+                        <input type="email" required placeholder="Enter email to reserve spot" class="form-control" style="font-size: 0.8rem; padding: 10px;">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.75rem;">RSVP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event FAQ / Hall Booking info -->
+    <section class="section bg-cream text-center">
+        <div class="container" style="max-width: 700px;">
+            <span class="section-tag">Corporate & Social Bookings</span>
+            <h2>Host Private Gatherings</h2>
+            <p>Our Sunlit Veranda and Main Dining Hall are available for private corporate luncheons, birthday gatherings, bridal showers, and press launches. We provide custom menus, coffee stations, and full acoustic systems.</p>
+            <a href="contact.html" class="btn btn-dark" style="margin-top: 15px;">Send Private Enquiry</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">L'Ambroisie<span>.</span></div>
+                <p>A culinary sanctuary where classic French tradition meets modern epicurean design. Savour every moment.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Submenus</h4>
+                <ul class="footer-links">
+                    <li><a href="menu-breakfast.html">Breakfast & Brunch</a></li>
+                    <li><a href="menu-lunch-dinner.html">Lunch & Dinner</a></li>
+                    <li><a href="menu-drinks.html">Artisanal Drinks</a></li>
+                    <li><a href="menu-desserts.html">Pastries & Desserts</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive recipes, tasting event details, and seasonal updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input">
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 L'Ambroisie Cafe & Bistro. All rights reserved. Created with passion and style.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
